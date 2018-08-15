@@ -8,5 +8,6 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image x:Name="Coockie" Margin="102,139,560.6,149" Source="coockie.png" Stretch="Fill"/>
+        <Label x:Name="coockies_counter" Content="Coockies: 0" HorizontalAlignment="Left" Height="37" Margin="102,77,0,0" VerticalAlignment="Top" Width="131"/>
     </Grid>
 </Window>
