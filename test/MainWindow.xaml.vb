@@ -1,5 +1,5 @@
 ﻿Class MainWindow
-    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
-        messageOutput.Content = "Hallo Welt"
+    Private Sub Coockie_GotFocus(sender As Object, e As RoutedEventArgs) Handles Coockie.GotFocus
+
     End Sub
 End Class
