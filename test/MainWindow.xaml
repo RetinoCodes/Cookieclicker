@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image x:Name="Coockie" Margin="102,139,560.6,149" Source="coockie.png" Stretch="Fill"/>
-        <Label x:Name="coockies_counter" Content="Coockies: 0" HorizontalAlignment="Left" Height="37" Margin="102,77,0,0" VerticalAlignment="Top" Width="131"/>
+        <Image x:Name="Cookie" Margin="102,139,560.6,149" Source="coockie.png" Stretch="Fill"/>
+        <Label x:Name="coockies_counter_label" Content="Cookies:" HorizontalAlignment="Left" Height="23" Margin="102,77,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="cookie_counter" Content="" HorizontalAlignment="Left" Margin="164,77,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="left_click" Content="Left Click" HorizontalAlignment="Left" Margin="49,297,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="right_click" Content="Right Click" HorizontalAlignment="Left" Margin="222,297,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.989,0.684"/>
     </Grid>
 </Window>
