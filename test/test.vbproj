@@ -133,5 +133,26 @@
   <ItemGroup>
     <Resource Include="coockie.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="panelVertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="panelHorizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="panelMenu3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="panelMenu_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="panelMenu_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bgBluesmall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bgBlue.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
