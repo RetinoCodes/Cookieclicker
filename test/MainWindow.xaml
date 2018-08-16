@@ -7,10 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image x:Name="Cookie" Margin="102,139,560.6,149" Source="coockie.png" Stretch="Fill"/>
-        <Label x:Name="coockies_counter_label" Content="Cookies:" HorizontalAlignment="Left" Height="23" Margin="102,77,0,0" VerticalAlignment="Top" Width="57"/>
+        <Image x:Name="Cookie" Margin="49,139,613.6,149" Source="coockie.png" Stretch="Fill"/>
+        <Label x:Name="coockies_counter_label" Content="Cookies:" HorizontalAlignment="Left" Height="23" Margin="49,73,0,0" VerticalAlignment="Top" Width="57"/>
         <Label x:Name="cookie_counter" Content="" HorizontalAlignment="Left" Margin="164,77,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="left_click" Content="Left Click" HorizontalAlignment="Left" Margin="49,297,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="right_click" Content="Right Click" HorizontalAlignment="Left" Margin="222,297,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.989,0.684"/>
+        <CheckBox x:Name="left_click" Content="Left Click" HorizontalAlignment="Left" Margin="10,297,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="right_click" Content="Right Click" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.989,0.684"/>
+        <Label x:Name="cookies_per_second_label" Content="Cookies pro secunde" HorizontalAlignment="Left" Height="29" Margin="49,105,0,0" VerticalAlignment="Top" Width="163"/>
+        <Button x:Name="Buyorsell_curser_Button" Content="Curser" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="549,77,0,0"/>
+        <Button x:Name="Buyorsell_Grandma_Button" Content="Grandma" HorizontalAlignment="Left" Height="19" Margin="549,101,0,0" VerticalAlignment="Top" Width="75"/>
+        <CheckBox x:Name="orBuy_CheckBox" Content="Buy" HorizontalAlignment="Left" Height="22" Margin="549,50,0,0" VerticalAlignment="Top" Width="75"/>
+        <CheckBox x:Name="orSell_CheckBox" Content="Sell" HorizontalAlignment="Left" Height="23" Margin="549,22,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="Count_cursor" Content="00" HorizontalAlignment="Left" Height="26" Margin="629,73,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="Count_Grandma" Content="00" HorizontalAlignment="Left" Height="24" Margin="629,98,0,0" VerticalAlignment="Top" Width="50"/>
     </Grid>
 </Window>
