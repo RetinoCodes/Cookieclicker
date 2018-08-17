@@ -1,20 +1,20 @@
 ﻿Imports System.Windows.Threading
 Class MainWindow
-    Dim angle As Double = 0
     Dim count As Double = 0
     Dim perSec As Double = 0
     Dim cursorCount As Double = 0
     Dim cursorCost As Double = 15
     Dim grandmaCount As Double = 0
     Dim grandmaCost As Double = 100
-    Dim RotateTransformAngle As New RotateTransform
+    Dim RotateTransformAngle1 As New RotateTransform
+    Dim RotateTransformAngle2 As New RotateTransform
     Dim leftButton As Boolean
     Dim rightButton As Boolean
     Private dpTimer As DispatcherTimer = New DispatcherTimer
     Private shineTimer As DispatcherTimer = New DispatcherTimer
 
     Private Sub Window_Activated(sender As Object, e As EventArgs)
-        shineTimer.Interval = TimeSpan.FromMilliseconds(10)
+        shineTimer.Interval = TimeSpan.FromMilliseconds(5)
         AddHandler shineTimer.Tick, AddressOf ShineTick
         shineTimer.Start()
 
@@ -24,10 +24,14 @@ Class MainWindow
     End Sub
 
     Private Sub ShineTick()
-        angle += 1
-        RotateTransformAngle.Angle = angle
-        cookie_shine1.RenderTransform = RotateTransformAngle
-        cookie_shine2.RenderTransform = RotateTransformAngle
+        RotateTransformAngle1.Angle += 0.25
+        RotateTransformAngle2.Angle -= 0.25
+        RotateTransformAngle1.CenterX = 128
+        RotateTransformAngle1.CenterY = 128
+        RotateTransformAngle2.CenterX = 128
+        RotateTransformAngle2.CenterY = 128
+        cookie_shine1.RenderTransform = RotateTransformAngle1
+        cookie_shine2.RenderTransform = RotateTransformAngle2
     End Sub
 
     Private Sub TickMe()
@@ -80,7 +84,7 @@ Class MainWindow
             If cursorCount > 0 Then
                 cursorCount -= 1
                 count += cursorCost * 0.5
-                cursorCost -= Math.Round(cursorCost / 1.15, 2)
+                cursorCost = Math.Round(cursorCost / 1.15, 2)
                 perSec -= 0.1
                 Count_cursor.Content = cursorCount.ToString()
                 cookie_counter.Content = count.ToString()
@@ -106,20 +110,21 @@ Class MainWindow
             If count >= grandmaCost Then
                 count -= grandmaCost
                 grandmaCount += 1
-                grandmaCost = grandmaCost * 1.15
+                grandmaCost = Math.Round(grandmaCost * 1.15, 2)
                 perSec += 1
                 Count_Grandma.Content = grandmaCount.ToString()
                 cookie_counter.Content = count.ToString()
-                Grandma_costs_Label_Copy.Content = "Eine Grandma kostet: " + Math.Round(grandmaCost, 2).ToString()
+                Grandma_costs_Label_Copy.Content = "Eine Grandma kostet: " + grandmaCost.ToString()
             End If
         ElseIf orBuy_CheckBox.IsChecked = False And orSell_CheckBox.IsChecked = True Then
             If grandmaCount > 0 Then
-                grandmaCount -= 14
+                grandmaCount -= 1
                 perSec -= 1
-                count += 50
+                count += grandmaCost * 0.5
+                grandmaCost = Math.Round(grandmaCost / 1.15, 2)
                 Count_Grandma.Content = grandmaCount.ToString()
                 cookie_counter.Content = count.ToString()
-                Grandma_costs_Label_Copy.Content = "Eine Grandma kostet: " + Math.Round(grandmaCost, 2).ToString()
+                Grandma_costs_Label_Copy.Content = "Eine Grandma kostet: " + grandmaCost.ToString()
             End If
         End If
     End Sub
