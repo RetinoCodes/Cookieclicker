@@ -25,15 +25,13 @@
         <Image Margin="-73,0,40.6,-92" Source="bgBlue.jpg" Stretch="Fill"/>
         <Label x:Name="coockies_counter_label" Content="Cookies:" HorizontalAlignment="Left" Height="23" Margin="49,73,0,0" VerticalAlignment="Top" Width="57"/>
         <Label x:Name="cookie_counter" Content="" HorizontalAlignment="Left" Margin="164,77,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="left_click" Content="Left Click" HorizontalAlignment="Left" Margin="10,297,0,0" VerticalAlignment="Top" IsChecked="True"/>
-        <CheckBox x:Name="right_click" Content="Right Click" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.989,0.684"/>
+        <CheckBox x:Name="left_click" Content="Left Click" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <CheckBox x:Name="right_click" Content="Right Click" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.989,0.684"/>
         <Label x:Name="cookies_per_second_label" Content="Cookies pro sekunde:" HorizontalAlignment="Left" Height="29" Margin="22,104,0,0" VerticalAlignment="Top" Width="152"/>
-        <Button x:Name="Buyorsell_curser_Button" Content="Curser" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="122.4,150,0,0" Grid.Column="1"/>
-        <Button x:Name="Buyorsell_Grandma_Button" Content="Grandma" HorizontalAlignment="Left" Height="19" Margin="122.4,200,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
-        <CheckBox x:Name="orBuy_CheckBox" Content="Buy" HorizontalAlignment="Left" Height="22" Margin="122.4,123,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" RenderTransformOrigin="1.82,-0.223"/>
-        <CheckBox x:Name="orSell_CheckBox" Content="Sell" HorizontalAlignment="Left" Height="23" Margin="122.4,99,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1"/>
-        <Label x:Name="Count_cursor" Content="00" HorizontalAlignment="Left" Height="26" Margin="217.4,150,0,0" VerticalAlignment="Top" Width="50" Grid.Column="1"/>
-        <Label x:Name="Count_Grandma" Content="00" HorizontalAlignment="Left" Height="24" Margin="217.4,197,0,0" VerticalAlignment="Top" Width="50" Grid.Column="1"/>
+        <Button x:Name="Buyorsell_curser_Button" Content="Curser" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="270.4,115,0,0" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="Buyorsell_Grandma_Button" Content="Grandma" HorizontalAlignment="Left" Height="19" Margin="270.4,153,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="orBuy_CheckBox" Content="Buy" HorizontalAlignment="Left" Height="22" Margin="120,90,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2" RenderTransformOrigin="1.82,-0.223"/>
+        <CheckBox x:Name="orSell_CheckBox" Content="Sell" HorizontalAlignment="Left" Height="23" Margin="66,90,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2"/>
         <Image Grid.Column="1" Margin="284.4,0,182.6,348" Source="panelMenu_left.png" Stretch="Fill" Grid.ColumnSpan="2"/>
         <Image Margin="218,0,269.2,350" Source="panelMenu_right.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
             <Image.RenderTransform>
@@ -48,7 +46,6 @@
         <Image Margin="213,59,182.6,348" Source="panelHorizontal.png" Stretch="Fill" RenderTransformOrigin="0.339,0.65" Grid.ColumnSpan="3"/>
         <Image Margin="209,0,35.6,-92" Source="panelVertical.png" Stretch="Fill"/>
         <Label x:Name="coockie_per_second_counter" Content="" HorizontalAlignment="Left" Height="29" Margin="149,104,0,0" VerticalAlignment="Top" Width="25"/>
-        <Label x:Name="Cursor_costs_Label" Content="1 Cursor costs: 15" Grid.Column="1" HorizontalAlignment="Left" Margin="122.4,174,0,0" VerticalAlignment="Top" FontSize="8"/>
         <Image x:Name="cookie_shine1" Margin="-33,73,26.6,83" Source="shine.png" Stretch="Fill" Opacity="0.25" HorizontalAlignment="Center">
             <Image.LayoutTransform>
                 <TransformGroup>
@@ -59,7 +56,6 @@
                 </TransformGroup>
             </Image.LayoutTransform>
         </Image>
-        <Label x:Name="Grandma_costs_Label_Copy" Content="1 Grandma costs: 100" Grid.Column="1" HorizontalAlignment="Left" Margin="122.4,233,0,0" VerticalAlignment="Top" FontSize="8"/>
         <Image x:Name="cookie_shine2" Margin="-33,73,26.6,83" Source="shine.png" Stretch="Fill" Opacity="0.25" HorizontalAlignment="Center">
             <Image.LayoutTransform>
                 <TransformGroup>
@@ -71,12 +67,18 @@
             </Image.LayoutTransform>
         </Image>
         <Image x:Name="Cookie" Margin="35,138,92.6,150" Source="coockie.png" Stretch="Fill"/>
-        <Label x:Name="Store_title_label" Content="Store" Grid.Column="2" HorizontalAlignment="Left" Height="32" Margin="120,-2,0,0" VerticalAlignment="Top" Width="54" FontSize="18" FontFamily="Impact" FontWeight="Bold"/>
+        <Label x:Name="Store_title_label" Content="Store" Grid.Column="2" HorizontalAlignment="Left" Height="32" Margin="118,-2,0,0" VerticalAlignment="Top" Width="75" FontSize="18" FontFamily="Rockwell Extra Bold" FontWeight="Bold" Foreground="White"/>
         <Image Margin="59,25,0.4,382" Source="panelHorizontal.png" Stretch="Fill" RenderTransformOrigin="0.339,0.65" Grid.Column="2"/>
         <Image Margin="61,74,0.4,333" Source="panelHorizontal.png" Stretch="Fill" RenderTransformOrigin="0.339,0.65" Grid.Column="2"/>
         <Image Margin="52,0,173.4,-92" Source="panelVertical.png" Stretch="Fill" Grid.Column="2"/>
-        <Image Grid.Column="2" Margin="63,123,-1.6,255" Source="button.png" Stretch="Fill"/>
-        <Image Grid.Column="2" Margin="63,158,-1.6,220" Source="button.png" Stretch="Fill"/>
-        <Image Grid.Column="2" Margin="63,193,-1.6,185" Source="button.png" Stretch="Fill"/>
+        <Image Grid.Column="2" Margin="62,108,-0.6,270" Source="Cursor_button.png" Stretch="Fill" MouseLeftButtonUp="Image_MouseLeftButtonUp"/>
+        <Image Grid.Column="2" Margin="62,143,-0.6,232" Source="Grandma_button.png" Stretch="Fill"/>
+        <Image Margin="61,181,0.4,195" Source="Farm_button.png" Stretch="Fill" Grid.Column="2"/>
+        <Label x:Name="Cursor_costs_Label" Content="costs: 15" Grid.Column="2" HorizontalAlignment="Left" Margin="96,125,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Grandma_costs_Label_Copy" Content="costs: 100" Grid.Column="2" HorizontalAlignment="Left" Margin="96,163,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Count_cursor" Content="0" HorizontalAlignment="Left" Height="26" Margin="214,112,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
+        <Label x:Name="Count_Grandma" Content="0" HorizontalAlignment="Left" Height="24" Margin="214,150,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
+        <Label x:Name="Count_Farm" Content="0" HorizontalAlignment="Left" Height="24" Margin="214,188,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
+        <Label x:Name="Farm_costs_Label" Content="costs: 1000" Grid.Column="2" HorizontalAlignment="Left" Margin="96,199,0,0" VerticalAlignment="Top" FontSize="8"/>
     </Grid>
 </Window>

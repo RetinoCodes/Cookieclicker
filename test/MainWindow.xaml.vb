@@ -129,9 +129,11 @@ Class MainWindow
         End If
     End Sub
 
-    Private Sub MainWindow1_Closed(sender As Object, e As EventArgs) Handles MyBase1.Closed, MyBase1.Closed
+    Private Sub Image_MouseLeftButtonUp(sender As Object, e As MouseButtonEventArgs)
 
     End Sub
+
+
 
 
     'Imports System.Windows.Threading
