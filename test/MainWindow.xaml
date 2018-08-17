@@ -27,7 +27,7 @@
         <Label x:Name="cookie_counter" Content="" HorizontalAlignment="Left" Margin="161,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.722,-1.031"/>
         <CheckBox x:Name="left_click" Content="Left Click" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" IsChecked="True"/>
         <CheckBox x:Name="right_click" Content="Right Click" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.989,0.684"/>
-        <Label x:Name="cookies_per_second_label" Content="Cookies pro sekunde:" HorizontalAlignment="Left" Height="29" Margin="22,42,0,0" VerticalAlignment="Top" Width="152" RenderTransformOrigin="0.496,0.301"/>
+        <Label x:Name="cookies_per_second_label" Content="Cookies pro Sekunde:" HorizontalAlignment="Left" Height="29" Margin="22,42,0,0" VerticalAlignment="Top" Width="152" RenderTransformOrigin="0.496,0.301"/>
         <Button x:Name="Buyorsell_curser_Button" Content="Curser" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="270.4,115,0,0" Grid.Column="1" Grid.ColumnSpan="2"/>
         <Button x:Name="Buyorsell_Grandma_Button" Content="Grandma" HorizontalAlignment="Left" Height="19" Margin="270.4,153,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Grid.ColumnSpan="2"/>
         <CheckBox x:Name="orBuy_CheckBox" Content="Buy" HorizontalAlignment="Left" Height="22" Margin="120,90,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2" RenderTransformOrigin="1.82,-0.223"/>
