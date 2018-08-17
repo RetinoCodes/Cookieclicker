@@ -172,5 +172,14 @@
   <ItemGroup>
     <Resource Include="Farm_button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mine_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Factory_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bank_button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

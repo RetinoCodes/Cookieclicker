@@ -73,12 +73,21 @@
         <Image Margin="52,0,173.4,-92" Source="panelVertical.png" Stretch="Fill" Grid.Column="2"/>
         <Image x:Name="Cursor_Button" Grid.Column="2" Margin="62,108,-0.6,270" Source="Cursor_button.png" Stretch="Fill"/>
         <Image x:Name="Grandma_Button" Grid.Column="2" Margin="62,143,-0.6,232" Source="Grandma_button.png" Stretch="Fill"/>
-        <Image Margin="61,181,0.4,195" Source="Farm_button.png" Stretch="Fill" Grid.Column="2"/>
-        <Label x:Name="Cursor_costs_Label" Content="costs: 15" Grid.Column="2" HorizontalAlignment="Left" Margin="96,125,0,0" VerticalAlignment="Top" FontSize="8"/>
-        <Label x:Name="Grandma_costs_Label_Copy" Content="costs: 100" Grid.Column="2" HorizontalAlignment="Left" Margin="96,163,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Image x:Name="Farm_Button" Margin="61,179,0.4,195" Source="Farm_button.png" Stretch="Fill" Grid.Column="2"/>
+        <Label x:Name="Cursor_costs_Label" Content="costs: 15" Grid.Column="2" HorizontalAlignment="Left" Margin="96,123,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Grandma_costs_Label_Copy" Content="costs: 100" Grid.Column="2" HorizontalAlignment="Left" Margin="96,160,0,0" VerticalAlignment="Top" FontSize="8"/>
         <Label x:Name="Count_cursor" Content="0" HorizontalAlignment="Left" Height="26" Margin="214,112,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
         <Label x:Name="Count_Grandma" Content="0" HorizontalAlignment="Left" Height="24" Margin="214,150,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
+        <Label x:Name="Farm_costs_Label" Content="costs: 1.100" Grid.Column="2" HorizontalAlignment="Left" Margin="96,197,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Image Grid.Column="2" Margin="61,217,0.4,158" Source="Mine_button.png" Stretch="Fill"/>
+        <Image Grid.Column="2" Margin="61,254,0.4,121" Source="Factory_button.png" Stretch="Fill"/>
+        <Image Grid.Column="2" Margin="61,291,0.4,83" Source="Bank_button.png" Stretch="Fill"/>
+        <Label x:Name="Mine_costs_Label" Content="costs: 12.000" Grid.Column="2" HorizontalAlignment="Left" Margin="96,234,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Factory_costs_Label" Content="costs: 130.000" Grid.Column="2" HorizontalAlignment="Left" Margin="96,271,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Bank_costs_Label" Content="costs: 1,4 mio" Grid.Column="2" HorizontalAlignment="Left" Margin="96,308,0,0" VerticalAlignment="Top" FontSize="8"/>
         <Label x:Name="Count_Farm" Content="0" HorizontalAlignment="Left" Height="24" Margin="214,188,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
-        <Label x:Name="Farm_costs_Label" Content="costs: 1000" Grid.Column="2" HorizontalAlignment="Left" Margin="96,199,0,0" VerticalAlignment="Top" FontSize="8"/>
+        <Label x:Name="Count_Mine" Content="0" HorizontalAlignment="Left" Height="24" Margin="214,230,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
+        <Label x:Name="Count_Factory" Content="0" HorizontalAlignment="Left" Height="24" Margin="214,267,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
+        <Label x:Name="Count_Bank" Content="0" HorizontalAlignment="Left" Height="24" Margin="214,304,-25.6,0" VerticalAlignment="Top" Width="50" Grid.Column="2"/>
     </Grid>
 </Window>
